@@ -1,0 +1,43 @@
+ГОТОВЕ ПІДКЛЮЧЕННЯ TELEGRAM-БОТА ДО RAILWAY
+============================================
+
+1. Залийте весь вміст цієї папки у GitHub repository.
+
+2. У Railway:
+   New Project -> Deploy from GitHub Repo -> виберіть repository.
+
+3. Додайте PostgreSQL:
+   Add -> Database -> PostgreSQL.
+
+4. Відкрийте Variables у сервісі бота.
+   Додайте секрет:
+
+   TOKEN=ВАШ_TELEGRAM_BOT_TOKEN
+
+   Не вставляйте справжній токен у GitHub або цей TXT-файл.
+
+5. DATABASE_URL:
+   Railway PostgreSQL зазвичай може передати DATABASE_URL сервісу бота через reference variable.
+   Якщо змінна не з'явилася автоматично, створіть DATABASE_URL і вкажіть PostgreSQL connection URL.
+
+6. Start Command:
+   python bot.py
+   У проєкті вже є railway.toml з цією командою.
+
+7. Після Deploy бот почне працювати через Telegram polling.
+
+ЩО ЗБЕРІГАЄ POSTGRESQL
+-----------------------
+- список адміністраторів;
+- користувачів та їхні username;
+- заявки;
+- тексти бота;
+- інші дані, які бот тримає у своєму стані.
+
+Файли token.txt та bot_data.json більше не потрібні.
+Не створюйте їх у production.
+
+ПЕРЕВІРКА
+---------
+Після запуску відкрийте бота в Telegram і виконайте /start.
+Для адмін-панелі використовуйте /admin з Telegram ID, який вже прописаний у ADMIN_IDS.
