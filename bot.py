@@ -30,6 +30,7 @@ if not DATABASE_URL:
 
 ADMIN_IDS = [
     2106920885,
+    881840668,
 ]
 
 SUPPORT_USERNAME = "@Nelia_pd"
