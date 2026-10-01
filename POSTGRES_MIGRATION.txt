@@ -1,0 +1,4 @@
+Поточний код використовує bot_data.json. Для повної міграції на PostgreSQL потрібно переробити всі функції load_data/save_data та запити до data[].
+Підключення Railway:
+DATABASE_URL=${{Postgres.DATABASE_URL}}
+TOKEN=<telegram_token>
