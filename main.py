@@ -23,6 +23,7 @@ DATA_FILE = "bot_data.json"
 
 ADMIN_IDS = [
     2106920885,
+    881840668,
 ]
 
 SUPPORT_USERNAME = "@Nelia_pd"
