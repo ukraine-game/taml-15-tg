@@ -29,8 +29,10 @@ if not DATABASE_URL:
     raise RuntimeError("Не задана змінна середовища DATABASE_URL. Додайте PostgreSQL у Railway.")
 
 ADMIN_IDS = [
-    2106920885,
-    881840668,
+    2106920885, # Роман Я
+    881840668, # Неля Віталіївна
+    773528804, # Діана
+    617835249, # Софія К
 ]
 
 SUPPORT_USERNAME = "@Nelia_pd"
